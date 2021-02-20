@@ -1,0 +1,59 @@
+gitea:
+  # add:
+  # organizations:
+  #   - org1
+  #   - org2
+  # teams:
+  #   org1:
+  #     devs:
+  #       - mariuss
+  #     ops:
+  #       - mariuss
+  #   org2:
+  #     devs:
+  #       - mariuss
+  # # team permisions: [read, write, admin]
+  # # repo permisions: ['repo.code', 'repo.issues', 'repo.ext_issues', 'repo.wiki', 'repo.pulls', 'repo.releases', 'repo.ext_wiki']
+  # permissions:
+  #   org1:
+  #     devs:
+  #       team: write
+  #       repo: read
+  #     ops:
+  #       team: write
+  #       repo: read
+  # repos:
+  #   org1:
+  #     devs:
+  #       - test
+  remove:
+    # Remove only members from teams
+    members:
+      org1:
+        devs:
+          - mariuss
+        ops:
+          - mariuss
+        Owners:
+          - mariuss
+      org2:
+        devs:
+          - mariuss
+    # Remove repos from teams
+    repos:
+      org1:
+        devs:
+          - test
+    # Remove only teams from orgs
+    teams:
+      org1:
+        - devs
+        - ops
+        - Owners
+      org2:
+        - devs
+        - Owners
+    # Remove organizations
+    organizations:
+      - org2
+      - org1

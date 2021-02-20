@@ -1,0 +1,37 @@
+gitea:
+  # add:
+  #   organizations:
+  #     - test-organization
+  #   teams:
+  #     test-organization:
+  #       test-team-one:
+  #         - mariuss
+  #         - smarius
+  #       test-team-two:
+  #         - mariusta
+  #   # team permisions: [read, write, admin]
+  #   # repo permisions: ['repo.code', 'repo.issues', 'repo.ext_issues', 'repo.wiki', 'repo.pulls', 'repo.releases', 'repo.ext_wiki']
+  #   permissions:
+  #     test-organization:
+  #       test-team-one:
+  #         team: admin
+  #         repo: []
+  #       test-team-two:
+  #         team: write
+  #         repo: ['repo.code']
+  remove:
+    members:
+      test-organization:
+        test-team-one:
+          - mariuss
+          - smarius
+        test-team-two:
+          - mariuss
+        Owners:
+          - mariuss
+    teams:
+      test-organization:
+        - test-team-one
+        - test-team-two
+    organizations:
+      - test-organization

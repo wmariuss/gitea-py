@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+click = "==7.0"
+requests = "==2.20.1"
+pyyaml = "*"
+cerberus = "==1.2"
+sty = "==1.0.0b8"
+termcolor = "==1.1.0"
+
+[dev-packages]
+pylint = "*"
+tox = "*"
+invoke = "*"
+giteapy = {editable = true,path = "."}
+wheel = "==0.30.0"
+pex = "==1.6.5"
+setuptools = "*"
+mypy = "*"
+pep8 = "*"
+
+[requires]
+python_version = "3.6"

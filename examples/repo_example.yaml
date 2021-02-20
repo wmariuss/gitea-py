@@ -1,0 +1,12 @@
+gitea:
+  add:
+    repos:
+      Prod:
+        platform-engineering:
+          - production-application-configs
+          - production-k8s-objects
+          - production-pillars
+          - production-backend-k8s-objects
+          - production-compose-manifests
+          - production-custom-grains
+          - dsa-landing-page
